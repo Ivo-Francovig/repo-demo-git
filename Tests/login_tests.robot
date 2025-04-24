@@ -8,11 +8,11 @@ Suite Teardown    Close All Browsers
 *** Test Cases ***
 
 Valid Login Scenario
-    [Tags]  login  valid
-    [Documentation]    Verify that a user can log in with valid credentials.
-    Open Application And Login    ${USERNAME}    ${PASSWORD}
+    [Etiqueta]  login  valid
+    [Documentos]    Verify that a user can log in with valid credentials.
+    Open Application And Login    ${nombreusuario}    ${PASSWORD}
     Verify Dashboard Is Displayed
-    Logout From Application
+    Logout From Application2
 
 Invalid Login Scenario
     [Tags]  login  invalid
