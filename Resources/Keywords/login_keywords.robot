@@ -11,7 +11,7 @@ Open Application And Login
     Input Text    id=username    ${username}
     Input Password    id=password    ${password}
     Click Button    id=loginButton
-    Wait Until Page Contains    Welcome to the Dashboard
+    Wait Until Page Contains    ACA LE CAMBIE ALGO YO
 
 Verify Dashboard Is Displayed
     Location Should Be    ${DASHBOARD_URL}
