@@ -1,7 +1,6 @@
 *** Settings ***
 
 Resource  ../Resources/Keywords/login_keywords.robot
-Variables  ../Resources/Keywords/common_variables_2.py
 
 Suite Setup       Open Browser    http://example.com    chrome
 Suite Teardown    Close All Browsers
@@ -20,13 +19,6 @@ Invalid Login Scenario
     [Documentation]    Verify that login fails with invalid credentials.
     Open Application And Login    invalidUser    wrongPassword
     Wait Until Page Contains    Invalid username or password
-
-Valid Login Scenario with secret variables
-    [Tags]  login  secret
-    [Documentation]    Verify that a user can log in with valid credentials.
-    Open Application And Login    ${USERNAME_SECRET}    ${PASSWORD_SECRET}
-    Verify Dashboard Is Displayed
-    Logout From Application
 
 *** Comments ***
 
@@ -47,3 +39,5 @@ Cargar variables de un archivo no vinculado al framework:
 
 Todas combinadas:  
 ...    robot -i login -d ./Results -v USERNAME:Usuario1 -v PASSWORD:Password1 -V ../Resources/Variables/common_variables_2.py login_tests.robot
+
+COMENTARIO EXTRA: LALALALA
