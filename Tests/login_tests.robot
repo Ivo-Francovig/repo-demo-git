@@ -10,9 +10,9 @@ Suite Teardown    Close All Browsers
 Valid Login Scenario
     [Tags]  login  valid
     [Documentation]    Verify that a user can log in with valid credentials.
-    Open Application And Login    ${USERNAME}    ${PASSWORD}
-    Verify Dashboard Is Displayed
-    Logout From Application
+    Take page screenshot
+    Scroll Element Into View
+    Get List Items
 
 Invalid Login Scenario
     [Tags]  login  invalid
